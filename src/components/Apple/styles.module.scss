@@ -1,0 +1,29 @@
+@keyframes rotateRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateLeft {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+#gear1 {
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: rotateRight 7s linear infinite;
+}
+
+#gear2 {
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: rotateLeft 5s linear infinite;
+}
